@@ -45,7 +45,6 @@ $(document).ready(function () {
 
   mediaCheck();
   init();
-  $.fn.fullpage.setAllowScrolling(false);
 
   window.addEventListener('resize', () => {
 
