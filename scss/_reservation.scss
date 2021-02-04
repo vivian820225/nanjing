@@ -1,0 +1,127 @@
+.form_wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.text_title {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 16px;
+}
+.text_sub {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.policy {
+  color: #fff;
+  a {
+    padding-left: 4px;
+    color: #ffcc00;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.input_group {
+  max-width: calc(50% - 8px);
+  flex: 1 1 calc(50% - 8px);
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 4px 8px;
+  color: #183149;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px;
+}
+::placeholder {
+    color: #183149;
+}
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  font-size: 22px;
+  user-select: none;
+  cursor: pointer;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+}
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.btn {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  color: #183149;
+  border: 0;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .1s ease-in;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffcc00;
+  }
+}
+
+@media (max-width: 768px) {
+  .md_space {
+    padding: 100px 1.5rem 120px 1.5rem;
+  }
+  
+  .input_group {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: initial;
+  }
+
+  .md_column {
+    flex-direction: column;
+  }
+}
