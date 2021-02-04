@@ -34,7 +34,19 @@ function init() {
     anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
     slidesNavigation: true,
     loopHorizontal: false,
-    autoScrolling:true,
+    autoScrolling: true,
+	  scrollHorizontally: true,
+    normalScrollElements: '#google_map',
+    navigation: true,
+  });
+}
+
+function initMobile() {
+  $('#fullpage').fullpage({
+    anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', '9thPage'],
+    slidesNavigation: false,
+    loopHorizontal: false,
+    autoScrolling: false,
 	  scrollHorizontally: true,
     normalScrollElements: '#google_map',
     navigation: true,
@@ -42,15 +54,23 @@ function init() {
 }
 
 $(document).ready(function () {
-
   mediaCheck();
-  init();
+
+  if (innerWidth < 768) {
+    initMobile();
+  }else {
+    init();
+  }
 
   window.addEventListener('resize', () => {
 
     mediaCheck();
     $.fn.fullpage.destroy('all');
-    init();
+    if (innerWidth < 768) {
+      initMobile();
+    }else {
+      init();
+    }
 
   });
 
@@ -58,5 +78,7 @@ $(document).ready(function () {
     sliding_controls: false,
     bind_resize: true
   });
+
+  
 
 });

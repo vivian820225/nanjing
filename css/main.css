@@ -59,6 +59,11 @@ h3 {
           justify-content: flex-start;
 }
 
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .bg_gold {
   background-color: #bf9d5a;
 }
@@ -101,6 +106,9 @@ h3 {
   }
   .d_md_table img {
     max-width: 100%;
+  }
+  .md_space {
+    padding: 100px 1.5rem 120px 1.5rem;
   }
 }
 
@@ -483,6 +491,7 @@ h3 {
 
 .policy {
   color: #fff;
+  line-height: 1.5;
 }
 
 .policy a {
@@ -611,8 +620,8 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .md_space {
-    padding: 100px 1.5rem 120px 1.5rem;
+  .policy a {
+    padding-left: 0;
   }
   .input_group {
     -webkit-box-flex: 1;
@@ -699,6 +708,7 @@ h3 {
   background-color: #183149;
   border-top: 1px solid #ffffff;
   text-align: right;
+  z-index: 999;
 }
 
 .footer ul li {

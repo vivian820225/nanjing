@@ -15,6 +15,7 @@
 }
 .policy {
   color: #fff;
+  line-height: 1.5;
   a {
     padding-left: 4px;
     color: #ffcc00;
@@ -111,8 +112,8 @@
 }
 
 @media (max-width: 768px) {
-  .md_space {
-    padding: 100px 1.5rem 120px 1.5rem;
+  .policy a {
+    padding-left: 0;
   }
   
   .input_group {

@@ -35,17 +35,17 @@ h3 {
   font-size: 32px;
   text-align: center;
 }
-
 .d_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .justify_start {
   justify-content: flex-start;
 }
-
+.wrap {
+  flex-wrap: wrap;
+}
 .bg_gold {
   background-color: #bf9d5a;
 }
@@ -82,6 +82,9 @@ h3 {
     img {
       max-width: 100%;
     }
+  }
+  .md_space {
+    padding: 100px 1.5rem 120px 1.5rem;
   }
 }
 
