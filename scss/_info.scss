@@ -17,10 +17,8 @@
     width: 100%;
   }
   h3 {
-    margin-bottom: 0;
-    padding-bottom: 0.5rem;
+    margin: 0;
     color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 24px;
     line-height: 2.4rem;
     text-align: left;
@@ -35,10 +33,11 @@
 
 .google_map {
   max-width: 100%;
-  height: 20vh;
+  height: 30vh;
   position: relative;
   iframe {
     max-width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     bottom: 0;

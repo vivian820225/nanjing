@@ -7,6 +7,9 @@
 *::before {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
 body {
   font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic",
     CenturyGothic, AppleGothic, sans-serif;
@@ -34,6 +37,9 @@ h3 {
   color: #fff;
   font-size: 32px;
   text-align: center;
+}
+p {
+  margin: 0;
 }
 .d_flex {
   display: flex;

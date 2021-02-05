@@ -155,7 +155,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: left top;
 }
 .Sec5img1 {
   background-image: url(../images/desktop/s5/sec5img01.jpg);
@@ -169,28 +169,21 @@
 .Sec5img4 {
   background-image: url(../images/desktop/s5/sec5img04.jpg);
 }
-
-// @media screen and (min-width: 1920px) {
-//   .Sec5_img {
-//     height: 100vh;
-//     position: relative;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center top;
-//   }
-//   .Sec5img1 {
-//     background-image: url(../images/desktop/s5/sec5img01.jpg);
-//   }
-//   .Sec5img2 {
-//     background-image: url(../images/desktop/s5/sec5img02.jpg);
-//   }
-//   .Sec5img3 {
-//     background-image: url(../images/desktop/s5/sec5img03.jpg);
-//   }
-//   .Sec5img4 {
-//     background-image: url(../images/desktop/s5/sec5img04.jpg);
-//   }
-// }
+.slide_content {
+  max-width: 480px;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  color: #fff;
+  .slide_title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .slide_text {
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+}
 
 // 團隊
 .Sec6_img {
@@ -198,7 +191,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: right top;
 }
 .Sec6img1 {
   background-image: url(../images/desktop/s6/sec6img01.jpg);
