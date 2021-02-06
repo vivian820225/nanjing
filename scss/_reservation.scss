@@ -22,7 +22,9 @@
 }
 
 .form-check-label {
+  margin-bottom: 1.5rem;
   color: #fff;
+  font-weight: normal;
   cursor: pointer;
   a {
     padding-left: 4px;
@@ -58,5 +60,31 @@
 @media (max-width: 996px) {
   .btn_secondary {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form_title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 22px;
+  }
+  .form-control,
+  .btn_secondary {
+    margin-bottom: .5rem;
+  }
+  .form-control,
+  .btn,
+  .btn_secondary {
+    font-size: 15px;
+  }
+  .policy {
+    margin-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: -1px;
+  }
+  .form-check-label  {
+    margin-bottom: 12px;
+    font-size: 12px;
   }
 }

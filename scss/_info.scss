@@ -57,3 +57,18 @@
     height: 30vh;
   }
 }
+
+@media (max-width: 480px) {
+  .table_wrapper h3 {
+    font-size: 18px;
+  }
+  .table_wrapper tbody tr td {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+
+  .intro {
+    padding: 0 1rem;
+    margin-bottom: 0;
+  }
+}

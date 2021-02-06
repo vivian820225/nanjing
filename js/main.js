@@ -1,18 +1,16 @@
 function mediaCheck() {
-  const sections = document.querySelectorAll(".section");
   const desktopGroupSlides = document.querySelectorAll(".group_slide");
   const mobileGroupSlides = document.querySelectorAll(".m_group_slide");
+  const panoramaSection = document.querySelector('.panorama-container');
 
-  sections.forEach((section) => {
-    if (innerWidth < 768) {
-      section.classList.add("fp-auto-height");
-    } else {
-      section.classList.remove("fp-auto-height");
-    }
-  });
-
+  if (innerWidth <= 768) {
+    panoramaSection.innerHTML = `<img src="images/mobile/s1/sec1img01.jpg" data-width="901" data-height="1081" alt="Panorama">`
+  } else {
+    panoramaSection.innerHTML = `<img src="images/desktop/s1/sec1img01.jpg" data-width="1920" data-height="1080" alt="Panorama">`
+  };
+  
   desktopGroupSlides.forEach((dGroupSlide) => {
-    if (innerWidth < 768) {
+    if (innerWidth <= 768) {
       dGroupSlide.classList.remove("slide");
     } else {
       dGroupSlide.classList.add("slide");
@@ -20,7 +18,7 @@ function mediaCheck() {
   });
 
   mobileGroupSlides.forEach((mGroupSlide) => {
-    if (innerWidth < 768) {
+    if (innerWidth <= 768) {
       mGroupSlide.classList.add("slide");
     } else {
       mGroupSlide.classList.remove("slide");
@@ -45,56 +43,18 @@ function init() {
     loopHorizontal: false,
     autoScrolling: true,
     scrollHorizontally: true,
+    scrollOverflow: true,
     normalScrollElements: "#google_map",
     navigation: true,
   });
 }
 
-function initMobile() {
-  $("#fullpage").fullpage({
-    anchors: [
-      "1stPage",
-      "2ndPage",
-      "3rdPage",
-      "4thPage",
-      "5thPage",
-      "6thPage",
-      "7thPage",
-      "8thPage",
-      "9thPage",
-    ],
-    slidesNavigation: false,
-    loopHorizontal: false,
-    autoScrolling: false,
-    scrollHorizontally: true,
-    normalScrollElements: ["8thPage", "9thPage", "#google_map"],
-    navigation: true,
-    fitToSection: false,
-  });
-}
-
 $(document).ready(function () {
   mediaCheck();
+  init();
 
-  if (innerWidth < 768) {
-    initMobile();
-  } else {
-    init();
-  }
-
-  const resizeTimer = null;
   $(window).bind("resize", function () {
-    if (resizeTimer) clearTimeout(resizeTimer);
-
-    resizeTimer = setTimeout(function () {
-      mediaCheck();
-      $.fn.fullpage.destroy("all");
-      if (innerWidth < 768) {
-        initMobile();
-      } else {
-        init();
-      }
-    }, 500);
+    location.reload();
   });
 
   $(".panorama-view").panorama360({
