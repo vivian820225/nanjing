@@ -25,11 +25,11 @@ function onImageLoaded(url, cb) {
 
   if (image.complete) {
     cb(image)
-    console.log('OK');
+    // console.log('OK');
   } else {
     image.onload = function () {
       cb(image)
-      console.log('error')
+      // console.log('error')
     }
   }
 }
@@ -44,6 +44,7 @@ function checkImgOnload() {
       $(".panorama-view").panorama360({
         sliding_controls: false,
         bind_resize: true,
+        use_preloader: false,
       });
     });
   }
@@ -53,7 +54,7 @@ function checkImgOnload() {
   } else {
     image.src = 'images/desktop/s1/sec1img01.jpg';
   };
-
+  
 }
 
 function init() {
@@ -88,7 +89,4 @@ $(document).ready(function () {
     checkImgOnload();
     location.reload();
   });
-
-
-
 });
