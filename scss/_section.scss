@@ -239,24 +239,14 @@
 .Sec5img4 {
   background-image: url(../images/desktop/s5/sec5img04.jpg);
 }
-.slide_content {
-  max-width: 480px;
-  position: absolute;
-  right: 3rem;
-  top: 5rem;
-  color: #fff;
-  .slide_title {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-  }
-  .slide_text {
-    font-size: .9rem;
-    line-height: 1.8;
-  }
-}
 
 // 團隊
+.group_slide_container {
+  display: flex;
+}
+
 .Sec6_img {
+  flex: 1 1 calc(100% - 280px);
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -279,6 +269,60 @@
   background-image: url(../images/desktop/s6/sec6img05.jpg);
 }
 
+.Sec6_content {
+  flex: 1 1 280px;
+  max-width: 280px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_content {
+  max-width: 200px;
+  margin-bottom: 3rem;
+  color: #595757;
+  img {
+    max-width: 100%;
+  }
+}
+
+.Sec6_content_img {
+  margin-bottom: 1rem;
+}
+
+.Sec6_content_title {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  &.bd_bottom {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #bf9d5a;
+  }
+  span {
+    letter-spacing: -2px;
+  }
+}
+.Sec6_content_text {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.pos_title {
+  width: 100%;
+  max-width: 220px;
+  color: #bf9d5a;
+  font-size: 42px;
+  line-height: 1;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 7%;
+  span {
+    letter-spacing: -1.5px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .life_md_bg {
     background-color: #bf9d5a;
@@ -288,5 +332,28 @@
     img {
       max-width: 100%;
     }
+  }
+}
+
+// 文字區塊
+.slide_content {
+  max-width: 460px;
+  position: absolute;
+  color: #fff;
+  &.pos_right {
+    right: 3.5rem;
+    top: 5rem;
+  }
+  &.pos_left {
+    top: 5rem;
+    left: 3.5rem;
+  }
+  .slide_title {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+  .slide_text {
+    font-size: 14px;
+    line-height: 1.8;
   }
 }
