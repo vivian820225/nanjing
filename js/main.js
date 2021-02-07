@@ -25,11 +25,9 @@ function onImageLoaded(url, cb) {
 
   if (image.complete) {
     cb(image)
-    // console.log('OK');
   } else {
     image.onload = function () {
       cb(image)
-      // console.log('error')
     }
   }
 }
@@ -86,7 +84,8 @@ $(document).ready(function () {
   init();
 
   window.addEventListener('resize', function() {
-    checkImgOnload();
-    location.reload();
+    setTimeout(function(){
+      this.location.reload();
+    });
   });
 });
