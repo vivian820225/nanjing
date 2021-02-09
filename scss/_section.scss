@@ -93,6 +93,26 @@
   }
 }
 
+@media (orientation: landscape) {
+  .view360.slide {
+    display: none;
+  }
+  .Sec1img1 {
+    height: 100vh;
+    background-image: url(../images/desktop/s1/sec1img01.jpg);
+    background-position: right top;
+  }
+}
+
+@media (orientation: portrait) {
+  .view360.slide {
+    display: table;
+  }
+  .Sec1img1 {
+   display: none;
+  }
+}
+
 // 交通
 .Sec2_img {
   height: 100vh;

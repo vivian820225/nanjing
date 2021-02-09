@@ -1,7 +1,7 @@
 function mediaCheck() {
   const desktopGroupSlides = document.querySelectorAll(".group_slide");
   const mobileGroupSlides = document.querySelectorAll(".m_group_slide");
-  
+
   desktopGroupSlides.forEach((dGroupSlide) => {
     if (innerWidth <= 768) {
       dGroupSlide.classList.remove("slide");
@@ -20,39 +20,37 @@ function mediaCheck() {
 }
 
 function onImageLoaded(url, cb) {
-  let image = new Image()
-  image.src = url
+  let image = new Image();
+  image.src = url;
 
   if (image.complete) {
-    cb(image)
+    cb(image);
   } else {
     image.onload = function () {
-      cb(image)
-    }
+      cb(image);
+    };
   }
 }
 
 function checkImgOnload() {
-  const panoramaSection = document.querySelector('.panorama-container');
+  const panoramaSection = document.querySelector(".panorama-container");
   let image = new Image();
 
   image.onload = function () {
     onImageLoaded(`${image.src}`, function () {
       panoramaSection.innerHTML = `<img src="${image.src}" data-width="${image.width}" data-height="${image.height}" alt="Panorama">`;
-      $(".panorama-view").panorama360({
-        sliding_controls: false,
-        bind_resize: true,
-        use_preloader: false,
-      });
     });
-  }
+    $(".panorama-view").panorama360({
+      sliding_controls: false,
+      bind_resize: true,
+    });
+  };
 
   if (innerWidth <= 768) {
-    image.src = 'images/mobile/s1/sec1img01.jpg';
+    image.src = "images/mobile/s1/sec1img01.jpg";
   } else {
-    image.src = 'images/desktop/s1/sec1img01.jpg';
-  };
-  
+    image.src = "images/desktop/s1/sec1img01.jpg";
+  }
 }
 
 function init() {
@@ -78,13 +76,12 @@ function init() {
 }
 
 $(document).ready(function () {
-
   checkImgOnload();
   mediaCheck();
   init();
 
-  window.addEventListener('resize', function() {
-    setTimeout(function(){
+  window.addEventListener("resize", function () {
+    setTimeout(function () {
       this.location.reload();
     });
   });
