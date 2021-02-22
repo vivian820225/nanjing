@@ -82,6 +82,14 @@
 .p360 {
   height: 100%;
 }
+
+.panorama-container {
+  background-color: #183149;
+  img {
+    top: -40px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .view360.slide {
     display: none;
@@ -89,7 +97,7 @@
   .Sec1img1 {
     height: 100vh;
     background-image: url(../images/desktop/s1/sec1img01.jpg);
-    background-position: right top;
+    background-position: right -40px;
   }
 }
 
@@ -100,7 +108,8 @@
   .Sec1img1 {
     height: 100vh;
     background-image: url(../images/desktop/s1/sec1img01.jpg);
-    background-position: right top;
+    background-position: right -40px;
+    // background-repeat: repeat-y;
   }
 }
 
@@ -111,6 +120,13 @@
   .Sec1img1 {
    display: none;
   }
+}
+// 公車
+@media screen and (max-width: 768px) {
+  .bus-md-bg {
+    background-color: #183149;
+  }
+
 }
 
 // 交通

@@ -260,6 +260,14 @@ p {
   height: 100%;
 }
 
+.panorama-container {
+  background-color: #183149;
+}
+
+.panorama-container img {
+  top: -40px;
+}
+
 @media screen and (min-width: 1920px) {
   .view360.slide {
     display: none;
@@ -267,7 +275,7 @@ p {
   .Sec1img1 {
     height: 100vh;
     background-image: url(../images/desktop/s1/sec1img01.jpg);
-    background-position: right top;
+    background-position: right -40px;
   }
 }
 
@@ -278,7 +286,7 @@ p {
   .Sec1img1 {
     height: 100vh;
     background-image: url(../images/desktop/s1/sec1img01.jpg);
-    background-position: right top;
+    background-position: right -40px;
   }
 }
 
@@ -288,6 +296,12 @@ p {
   }
   .Sec1img1 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bus-md-bg {
+    background-color: #183149;
   }
 }
 
@@ -833,6 +847,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.card_bg_blue {
+  color: #fff;
+  background-color: #183149;
+}
+
 @media (max-width: 480px) {
   .card,
   .card_gold {
@@ -918,9 +937,9 @@ p {
 
 @media screen and (max-width: 480px) {
   .footer {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 8px;
   }
   .logo {

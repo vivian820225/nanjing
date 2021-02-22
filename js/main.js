@@ -65,6 +65,7 @@ function init() {
       "7thPage",
       "8thPage",
       "9thPage",
+      "10thPage",
     ],
     slidesNavigation: true,
     loopHorizontal: false,
