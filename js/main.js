@@ -1,24 +1,3 @@
-function mediaCheck() {
-  const desktopGroupSlides = document.querySelectorAll(".group_slide");
-  const mobileGroupSlides = document.querySelectorAll(".m_group_slide");
-
-  desktopGroupSlides.forEach((dGroupSlide) => {
-    if (innerWidth <= 768) {
-      dGroupSlide.classList.remove("slide");
-    } else {
-      dGroupSlide.classList.add("slide");
-    }
-  });
-
-  mobileGroupSlides.forEach((mGroupSlide) => {
-    if (innerWidth <= 768) {
-      mGroupSlide.classList.add("slide");
-    } else {
-      mGroupSlide.classList.remove("slide");
-    }
-  });
-}
-
 function onImageLoaded(url, cb) {
   let image = new Image();
   image.src = url;
@@ -78,7 +57,6 @@ function init() {
 
 $(document).ready(function () {
   checkImgOnload();
-  mediaCheck();
   init();
 
   window.addEventListener("resize", function () {

@@ -60,5 +60,11 @@
   
   .letter_space {
     letter-spacing: -2px;
+    &__plus {
+      letter-spacing: -4px;
+    }
+    &__plus2 {
+      letter-spacing: -5px;
+    }
   }
 }
