@@ -53,6 +53,10 @@ p {
   font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
+.text_dark {
+  color: #595757;
+}
+
 .d_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,8 +605,41 @@ p {
   letter-spacing: -1.5px;
 }
 
+.Sec7_img {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+
+.Sec7img1 {
+  background-image: url(../images/desktop/s7/sec7img01.jpg);
+}
+
+.Sec7img2 {
+  background-image: url(../images/desktop/s7/sec7img02.jpg);
+}
+
+.Sec7img3 {
+  background-image: url(../images/desktop/s7/sec7img03.jpg);
+}
+
+.Sec7img4 {
+  background-image: url(../images/desktop/s7/sec7img04.jpg);
+}
+
+.Sec7img1_m {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-image: url(../images/mobile/s7/sec7img01.jpg);
+}
+
 @media screen and (max-width: 768px) {
-  .life_md_bg {
+  .section_md_bg {
     background-color: #bf9d5a;
   }
   .group_slide img {
@@ -614,16 +651,20 @@ p {
   max-width: 460px;
   position: absolute;
   color: #fff;
+  top: 5rem;
 }
 
 .slide_content.pos_right {
   right: 3.5rem;
-  top: 5rem;
 }
 
 .slide_content.pos_left {
-  top: 5rem;
   left: 3.5rem;
+}
+
+.slide_content.pos_bottom {
+  top: initial;
+  bottom: 6rem;
 }
 
 .slide_content .slide_title {
@@ -634,6 +675,34 @@ p {
 .slide_content .slide_text {
   font-size: 14px;
   line-height: 1.8;
+}
+
+.slide_content .slide_heading {
+  font-size: 32px;
+}
+
+.slide_content .slide_heading_gold {
+  color: #bf9d5a;
+  font-size: 52px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .card_heading {
+    position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+  }
+  .card_heading .slide_heading {
+    font-size: 20px;
+    color: #fff;
+  }
+  .card_heading .slide_heading_gold {
+    color: #bf9d5a;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 }
 
 .bg_repeat {

@@ -359,9 +359,38 @@
   }
 }
 
+// 建材
+.Sec7_img {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+.Sec7img1 {
+  background-image: url(../images/desktop/s7/sec7img01.jpg);
+}
+.Sec7img2 {
+  background-image: url(../images/desktop/s7/sec7img02.jpg);
+}
+.Sec7img3 {
+  background-image: url(../images/desktop/s7/sec7img03.jpg);
+}
+.Sec7img4 {
+  background-image: url(../images/desktop/s7/sec7img04.jpg);
+}
+
+.Sec7img1_m {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-image: url(../images/mobile/s7/sec7img01.jpg);
+}
 
 @media screen and (max-width: 768px) {
-  .life_md_bg {
+  .section_md_bg {
     background-color: #bf9d5a;
   }
 
@@ -377,13 +406,16 @@
   max-width: 460px;
   position: absolute;
   color: #fff;
+  top: 5rem;
   &.pos_right {
     right: 3.5rem;
-    top: 5rem;
   }
   &.pos_left {
-    top: 5rem;
     left: 3.5rem;
+  }
+  &.pos_bottom {
+    top: initial;
+    bottom: 6rem;
   }
   .slide_title {
     margin-bottom: 1.5rem;
@@ -392,5 +424,31 @@
   .slide_text {
     font-size: 14px;
     line-height: 1.8;
+  }
+  .slide_heading {
+    font-size: 32px;
+  }
+  .slide_heading_gold {
+    color: #bf9d5a;
+    font-size: 52px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .card_heading {
+    position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+    .slide_heading {
+      font-size: 20px;
+      color: #fff;
+    }
+    .slide_heading_gold {
+      color: #bf9d5a;
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
   }
 }
