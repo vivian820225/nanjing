@@ -381,7 +381,7 @@
 }
 
 .Sec7img1_m {
-  height: 100vh;
+  height: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,7 +438,7 @@
 @media screen and (max-width: 768px)  {
   .card_heading {
     position: absolute;
-    bottom: 80px;
+    bottom: 4rem;
     left: 1.5rem;
     .slide_heading {
       font-size: 20px;
