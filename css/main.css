@@ -690,7 +690,7 @@ p {
 @media screen and (max-width: 768px) {
   .card_heading {
     position: absolute;
-    bottom: 15%;
+    bottom: 80px;
     left: 1.5rem;
   }
   .card_heading .slide_heading {
