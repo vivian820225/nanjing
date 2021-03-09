@@ -248,7 +248,8 @@ p {
 
 @media screen and (max-width: 480px) {
   .Sec0home_m {
-    background-position: 55% 45%;
+    background-position: center center;
+    background-size: cover;
   }
   .Sec0home_m::before {
     top: 1rem;
@@ -611,6 +612,77 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
+}
+
+.Sec7_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Sec7_content .pic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% - 280px);
+          flex: 1 1 calc(100% - 280px);
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+
+.Sec7_content .inner_content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 280px;
+          flex: 1 1 280px;
+  max-width: 280px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Sec7_content .main_content {
+  max-width: 200px;
+  margin-bottom: 100px;
+  color: #595757;
+}
+
+.Sec7_content .content_title {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.Sec7_content .content_title.letter_space {
+  letter-spacing: -1px;
+}
+
+.Sec7_content .content_text {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.Sec7_content .img_box {
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  border: 1px solid #a5a2a2;
+}
+
+.Sec7_content .img_box img {
+  margin: 0 auto;
+  max-height: 200px;
 }
 
 .Sec7img1 {
