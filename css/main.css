@@ -593,16 +593,13 @@ p {
 
 .pos_title {
   width: 100%;
-  max-width: 220px;
+  max-width: 200px;
   color: #bf9d5a;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 1;
   white-space: nowrap;
   position: absolute;
   bottom: 7%;
-}
-
-.pos_title span {
   letter-spacing: -1.5px;
 }
 
