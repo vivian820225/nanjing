@@ -603,6 +603,10 @@ p {
   letter-spacing: -1.5px;
 }
 
+.pos_title.init_space {
+  letter-spacing: initial;
+}
+
 .Sec7_img {
   height: 100vh;
   position: relative;

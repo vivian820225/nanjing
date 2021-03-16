@@ -356,6 +356,9 @@
   position: absolute;
   bottom: 7%;
   letter-spacing: -1.5px;
+  &.init_space {
+    letter-spacing: initial;
+  }
 }
 
 // 建材
