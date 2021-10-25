@@ -405,6 +405,8 @@ p {
 
 .Sec4_img {
   height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
