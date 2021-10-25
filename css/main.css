@@ -625,6 +625,7 @@ p {
 
 .Sec7_content,
 .Sec7_md_content {
+  height: 100vh;
   margin: 0 auto;
   position: relative;
   color: #bf9d5a;
