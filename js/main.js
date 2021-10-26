@@ -66,7 +66,7 @@ function init() {
     ],
     slidesNavigation: true,
     loopHorizontal: false,
-    // autoScrolling: true,
+    autoScrolling: true,
     // scrollOverflow: true,
     scrollHorizontally: true,
     normalScrollElements: "#google_map",
