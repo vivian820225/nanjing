@@ -637,6 +637,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+  max-height: 100%;
+  background-color: #fff;
 }
 
 .Sec7 h3 {
