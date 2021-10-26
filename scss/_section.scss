@@ -379,7 +379,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    max-height: 100%;
+    max-height: calc(100% - 40px);
     background-color: #fff;
     position: relative;
   }
@@ -451,7 +451,7 @@
   .Sec7 {
     h3,
     .Sec7_grid {
-      max-width: calc(100% - 48px);
+      max-width: calc(100% - 96px);
     }
   }
 }
@@ -473,7 +473,6 @@
       margin: 0 auto 40px auto;
     }
     .Sec7_grid_item {
-      width: calc(100% - 32px);
       max-width: 620px;
       margin: 0 auto;
       line-height: 1.5;
@@ -494,6 +493,7 @@
 @media screen and (max-width: 480px) {
   .Sec7 {
     h3 {
+      max-width: calc(100% - 32px);
       font-size: 18px;
       top: 0;
       &::before {
@@ -501,6 +501,7 @@
       }
     }
     .Sec7_grid_item {
+      max-width: calc(100% - 32px);
       h4 {
         font-size: 18px;
         margin: 32px auto 16px auto;
