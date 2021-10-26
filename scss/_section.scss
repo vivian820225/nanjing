@@ -371,7 +371,11 @@
 
 // 建材
 .Sec7 {
-  .group_slide {
+  .Sec7_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
   }
   h3 {
@@ -428,6 +432,7 @@
         font-size: 20px;
         margin: 24px auto;
         line-height: 1.5;
+        text-align: left;
       }
       p {
         font-size: 18px;
@@ -441,7 +446,7 @@
   .Sec7 {
     h3,
     .Sec7_grid {
-      max-width: 768px;
+      max-width: calc(100% - 48px);
     }
   }
 }
@@ -460,7 +465,6 @@
 
   .Sec7 {
     h3 {
-      max-width: calc(100% - 48px);
       margin: 0 auto 40px auto;
     }
     .Sec7_grid_item {
