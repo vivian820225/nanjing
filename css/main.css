@@ -642,7 +642,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  max-height: calc(100% - 40px);
+  max-height: 100vh;
   background-color: #fff;
   position: relative;
 }
@@ -723,7 +723,7 @@ p {
 @media screen and (max-width: 1280px) {
   .Sec7 h3,
   .Sec7 .Sec7_grid {
-    max-width: calc(100% - 96px);
+    max-width: calc(90% - 96px);
   }
 }
 
