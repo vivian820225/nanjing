@@ -292,6 +292,7 @@
 .Sec6_img {
   flex: 1 1 calc(100% - 280px);
   height: 100vh;
+  max-height: 100vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,7 +318,7 @@
   flex: 1 1 280px;
   max-width: 280px;
   height: 100vh;
-  max-height: 100%;
+  max-height: 100vh;
   overflow: hidden;
   display: flex;
   position: relative;
@@ -371,6 +372,7 @@
 
 // 建材
 .Sec7 {
+  position: relative;
   .Sec7_container {
     display: flex;
     justify-content: center;
