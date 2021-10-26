@@ -327,7 +327,7 @@
 }
 .main_content {
   max-width: 200px;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   color: #595757;
   img {
     max-width: 100%;
@@ -468,9 +468,12 @@
       max-width: 620px;
       margin: 0 auto;
       line-height: 1.5;
+      color: #bf9d5a;
       h4 {
         font-size: 1.6rem;
         margin: 24px auto;
+        text-align: center;
+        line-height: 1.5;
       }
       p {
         font-size: 1.1rem;
