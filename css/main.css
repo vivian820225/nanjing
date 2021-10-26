@@ -182,6 +182,11 @@ p {
   }
 }
 
+.section {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .Sec_img {
   position: relative;
   background-repeat: no-repeat;
