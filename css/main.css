@@ -121,6 +121,9 @@ p {
   .d_md_block img {
     max-width: 100%;
   }
+  .d_md_inline {
+    display: inline-block !important;
+  }
   .d_md_table {
     display: table !important;
   }
@@ -699,30 +702,30 @@ p {
 .Sec7 .Sec7_grid {
   display: -ms-grid;
   display: grid;
-  width: calc(90% - 96px);
-  max-width: 1280px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 72px;
+  width: calc(90% - 96px);
+  max-width: 1280px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
-}
-
-.Sec7 .Sec7_grid .Sec7_grid_item {
   color: #bf9d5a;
 }
 
-.Sec7 .Sec7_grid .Sec7_grid_item img {
+.Sec7 .Sec7_grid img {
   max-width: 100%;
 }
 
-.Sec7 .Sec7_grid .Sec7_grid_item h4 {
+.Sec7 .Sec7_grid h4 {
   font-size: 20px;
   margin: 24px auto;
   line-height: 1.5;
   text-align: left;
 }
 
-.Sec7 .Sec7_grid .Sec7_grid_item p {
+.Sec7 .Sec7_grid p {
   font-size: 18px;
 }
 
@@ -734,43 +737,47 @@ p {
     max-width: 100%;
   }
   .Sec7 h3 {
+    max-width: 620px;
     margin: 0 auto 40px auto;
   }
-  .Sec7 .Sec7_grid_item {
+  .Sec7 .Sec7_grid {
     max-width: 620px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
     margin: 0 auto;
     line-height: 1.5;
     color: #bf9d5a;
   }
-  .Sec7 .Sec7_grid_item h4 {
+  .Sec7 .Sec7_grid h4 {
     font-size: 1.6rem;
     margin: 24px auto;
     text-align: center;
     line-height: 1.5;
   }
-  .Sec7 .Sec7_grid_item p {
+  .Sec7 .Sec7_grid p {
     font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .Sec7 h3 {
-    max-width: calc(100% - 32px);
+    width: calc(100% - 32px);
     font-size: 18px;
   }
   .Sec7 h3::before {
     width: 240px;
   }
-  .Sec7 .Sec7_grid_item {
-    max-width: calc(100% - 32px);
+  .Sec7 .Sec7_grid {
+    width: calc(100% - 32px);
   }
-  .Sec7 .Sec7_grid_item h4 {
+  .Sec7 .Sec7_grid h4 {
     font-size: 18px;
-    margin: 32px auto 16px auto;
+    margin: 16px auto 16px auto;
     text-align: center;
     line-height: 1.6;
   }
-  .Sec7 .Sec7_grid_item p {
+  .Sec7 .Sec7_grid p {
     font-size: 12px;
   }
 }
@@ -793,6 +800,11 @@ p {
 .slide_content.pos_bottom {
   top: initial;
   bottom: 6rem;
+}
+
+.slide_content.bg_block {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 24px;
 }
 
 .slide_content .slide_title {
