@@ -391,7 +391,7 @@
   h3 {
     width: calc(90% - 96px);
     max-width: 1280px;
-    margin: 48px auto;
+    margin:  0 auto 48px auto;
     font-size: 24px;
     background-color: #fff;
     color: #bf9d5a;
@@ -490,7 +490,6 @@
     h3 {
       max-width: calc(100% - 32px);
       font-size: 18px;
-      top: 0;
       &::before {
         width: 240px;
       }
