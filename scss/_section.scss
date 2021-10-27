@@ -389,7 +389,7 @@
     position: relative;
   }
   h3 {
-    width: 100%;
+    width: calc(90% - 96px);
     max-width: 1280px;
     margin: 48px auto;
     font-size: 24px;
@@ -429,7 +429,8 @@
 
   .Sec7_grid {
     display: grid;
-    max-width: 1336px;
+    width: calc(90% - 96px);
+    max-width: 1280px;
     grid-template-columns: repeat(2, 1fr);
     gap: 72px;
     margin: 0 auto;
@@ -450,17 +451,6 @@
     }
   }
 }
-
-
-@media screen and (max-width: 1280px) {
-  .Sec7 {
-    h3,
-    .Sec7_grid {
-      max-width: calc(90% - 96px);
-    }
-  }
-}
-
 
 @media screen and (max-width: 1024px) {
   .section_md_bg {

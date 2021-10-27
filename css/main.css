@@ -653,7 +653,7 @@ p {
 }
 
 .Sec7 h3 {
-  width: 100%;
+  width: calc(90% - 96px);
   max-width: 1280px;
   margin: 48px auto;
   font-size: 24px;
@@ -699,7 +699,8 @@ p {
 .Sec7 .Sec7_grid {
   display: -ms-grid;
   display: grid;
-  max-width: 1336px;
+  width: calc(90% - 96px);
+  max-width: 1280px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 72px;
@@ -723,13 +724,6 @@ p {
 
 .Sec7 .Sec7_grid .Sec7_grid_item p {
   font-size: 18px;
-}
-
-@media screen and (max-width: 1280px) {
-  .Sec7 h3,
-  .Sec7 .Sec7_grid {
-    max-width: calc(90% - 96px);
-  }
 }
 
 @media screen and (max-width: 1024px) {
