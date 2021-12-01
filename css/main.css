@@ -202,6 +202,10 @@ p {
   background-position: right bottom;
 }
 
+.Sec0home_content {
+  max-width: 90%;
+}
+
 .Sec0home_text {
   display: none;
 }
@@ -218,35 +222,7 @@ p {
     position: relative;
     height: 100%;
     background-image: url(../images/mobile/m-s0bg-bg.jpg);
-    background-position: 55% center;
-  }
-  .Sec0home_m::before {
-    content: '';
-    display: block;
-    width: 20%;
-    max-width: 120px;
-    height: 200px;
-    background-image: url(../images/mobile/m-s0bg-1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: 1;
-  }
-  .Sec0home_m::after {
-    content: '';
-    display: block;
-    width: 50%;
-    max-width: 340px;
-    height: 180px;
-    background-image: url(../images/mobile/m-s0bg-2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    z-index: 1;
+    background-position: center center;
   }
   .Sec0home_text {
     display: block;
@@ -260,7 +236,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .Sec0home_m {
-    background-position: center center;
+    background-position: 80% center;
     background-size: cover;
   }
   .Sec0home_m::before {
