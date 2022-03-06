@@ -63,6 +63,7 @@ function init() {
       "13thPage",
       "14thPage",
       "15thPage",
+      "16thPage",
     ],
     slidesNavigation: true,
     loopHorizontal: false,
