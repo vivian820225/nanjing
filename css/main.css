@@ -971,8 +971,8 @@ p {
     max-height: 200px;
   }
   .Sec8_content {
-    -ms-grid-rows: 100px 220px 2fr;
-        grid-template-rows: 100px 220px 2fr;
+    -ms-grid-rows: 80px 220px 2fr;
+        grid-template-rows: 80px 220px 2fr;
   }
   .Sec8_content .border_content_wrapper {
     padding-top: 12px;
