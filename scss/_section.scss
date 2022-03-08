@@ -516,6 +516,9 @@
 
 @media screen and (max-width: 480px) {
   .Sec7 {
+    .Sec7_container {
+      transform: translateY(-2rem);
+    }
     h3 {
       width: calc(100% - 32px);
       font-size: 18px;
@@ -609,7 +612,7 @@
   }
   .Sec8_content {
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 100px 220px 2fr;
     max-width: 100%;
     padding: 0;
     gap: 24px;
@@ -639,6 +642,17 @@
       writing-mode: initial;
       font-size: 12px;
       padding-bottom: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Sec8_img_m {
+    max-height: 200px;
+  }
+  .Sec8_content {
+    .border_content {
+      letter-spacing: -1px;
     }
   }
 }
