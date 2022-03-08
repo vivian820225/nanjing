@@ -901,6 +901,7 @@ p {
 @media (max-width: 768px) {
   .Sec8_img_m {
     max-width: 85%;
+    max-height: 320px;
     margin: 0 auto;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -909,13 +910,20 @@ p {
        object-fit: contain;
   }
   .Sec8_content {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 100px 220px 2fr;
-        grid-template-rows: 100px 220px 2fr;
+    -ms-grid-rows: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr;
     max-width: 100%;
     padding: 0;
     gap: 24px;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     background-color: #fff;
   }
   .Sec8_content .border_content_wrapper {
@@ -927,6 +935,9 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #bf9d5a;
     font-size: 12px;
     gap: 16px;
@@ -958,6 +969,13 @@ p {
 @media (max-width: 480px) {
   .Sec8_img_m {
     max-height: 200px;
+  }
+  .Sec8_content {
+    -ms-grid-rows: 100px 220px 2fr;
+        grid-template-rows: 100px 220px 2fr;
+  }
+  .Sec8_content .border_content_wrapper {
+    padding-top: 12px;
   }
   .Sec8_content .border_content {
     letter-spacing: -1px;

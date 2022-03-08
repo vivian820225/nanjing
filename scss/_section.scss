@@ -606,21 +606,26 @@
 @media (max-width: 768px) {
   .Sec8_img_m {
     max-width: 85%;
+    max-height: 320px;
     margin: 0 auto;
     align-self: center;
     object-fit: contain;
   }
   .Sec8_content {
+    flex: initial;
+    width: 100%;
     display: grid;
-    grid-template-rows: 100px 220px 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
     max-width: 100%;
     padding: 0;
     gap: 24px;
+    justify-content: initial;
     background-color: #fff;
     .border_content_wrapper {
       padding: 24px;
       flex-direction: row;
       align-items: center;
+      justify-content: center;
       background-color: #bf9d5a;
       font-size: 12px;
       gap: 16px;
@@ -651,6 +656,10 @@
     max-height: 200px;
   }
   .Sec8_content {
+    grid-template-rows: 100px 220px 2fr;
+    .border_content_wrapper {
+      padding-top: 12px;
+    }
     .border_content {
       letter-spacing: -1px;
     }
