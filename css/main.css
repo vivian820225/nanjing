@@ -983,8 +983,8 @@ p {
   }
   .Sec8_content .border_sub_title,
   .Sec8_content .border_content {
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem);
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
   }
   .Sec8_content .border_sub_title {
     margin-right: 16px;
