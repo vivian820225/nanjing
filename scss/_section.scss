@@ -662,10 +662,19 @@
     }
     .border_content_wrapper {
       padding-top: 0;
+      gap: 0;
+    }
+    .border_sub_title,
+    .border_content {
+      transform: translateY(-1rem);
+    }
+    .border_sub_title {
+      margin-right: 16px;
     }
     .border_content {
       letter-spacing: -1px;
     }
+
   }
 }
 

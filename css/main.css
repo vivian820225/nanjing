@@ -979,6 +979,15 @@ p {
   }
   .Sec8_content .border_content_wrapper {
     padding-top: 0;
+    gap: 0;
+  }
+  .Sec8_content .border_sub_title,
+  .Sec8_content .border_content {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  .Sec8_content .border_sub_title {
+    margin-right: 16px;
   }
   .Sec8_content .border_content {
     letter-spacing: -1px;
