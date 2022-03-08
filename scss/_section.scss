@@ -656,7 +656,10 @@
     max-height: 200px;
   }
   .Sec8_content {
-    grid-template-rows: 80px 220px 2fr;
+    grid-template-rows: auto 220px 2fr;
+    .Sec8_title {
+      padding-top: 1rem;
+    }
     .border_content_wrapper {
       padding-top: 12px;
     }
