@@ -292,10 +292,38 @@ p {
   }
 }
 
-.video {
-  display: block;
+#video-section {
+  overflow: hidden;
+  position: relative;
+}
+
+#video-section .layer {
+  position: absolute;
+  z-index: 4;
   width: 100%;
   height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
 }
 
 .p360 {
