@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 img {
@@ -24,7 +24,7 @@ img {
 }
 
 h1 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #fff;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h6 {
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -50,7 +50,7 @@ p {
 }
 
 .fontHei {
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .text_dark {
@@ -314,6 +314,7 @@ p {
 .video {
   position: absolute;
   right: 0;
+  left: 0;
   bottom: 0;
   top: 0;
   width: 100%;
@@ -1348,7 +1349,7 @@ p {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G3 G3" "G1 G1 G3 G3";
+      grid-template-areas: "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G3 G3" "G1 G1 G3 G3";
 }
 
 .img_grid__2 {
@@ -1363,7 +1364,7 @@ p {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "G1 G1 G3 G3" "G1 G1 G3 G3" "G2 G2 G4 G4" "G2 G2 G4 G4";
+      grid-template-areas: "G1 G1 G3 G3" "G1 G1 G3 G3" "G2 G2 G4 G4" "G2 G2 G4 G4";
 }
 
 .img_grid__3 {
@@ -1378,7 +1379,7 @@ p {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G2 G2";
+      grid-template-areas: "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G2 G2" "G1 G1 G2 G2";
 }
 
 .g_img {
@@ -1515,7 +1516,7 @@ p {
   font-size: 17px;
   color: #ffffff;
   padding: 0 4px;
-  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: MSungHK, "微軟正黑體", "Microsoft JhengHei", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .footer ul li:first-of-type {
