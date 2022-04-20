@@ -336,24 +336,14 @@
 .Sec5img1 {
   background-image: url(../images/desktop/s5/sec5img01.jpg);
 }
-
-// 層峰眼界
 .Sec5img2 {
-  position: relative;
   background-image: url(../images/desktop/s5/sec5img02.jpg);
-  .Sec5img2_img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-width: 100%;
-  }
 }
-
-@media (max-width: 768px) {
-  .Sec5img2 {
-    position: relative;
-    background-image: url(../images/mobile/s5/sec5img02.jpg);
-  }
+.Sec5img3 {
+  background-image: url(../images/desktop/s5/sec5img03.jpg);
+}
+.Sec5img4 {
+  background-image: url(../images/desktop/s5/sec5img04.jpg);
 }
 
 // 團隊
